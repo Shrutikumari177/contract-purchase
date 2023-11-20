@@ -1,0 +1,25 @@
+<mvc:View controllerName="purchaseannotate.controller.View4"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+   
+<GenericTile id="_IDGenGenericTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Cumulative Totals" subheader="Expenses" press="press">
+
+<TileContent id="_IDGenTileContent3" unit="Unit" footer="Footer Text">
+
+<NumericContent id="_IDGenNumericContent1" value="1762" icon="sap-icon://line-charts" withMargin="false" />
+
+</TileContent>
+
+</GenericTile>
+
+<GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="">
+        <TileContent id="_IDGenTileContent1" >
+        </TileContent>
+    </GenericTile>
+        <GenericTile id="_IDGenGenericTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="" >
+        <TileContent id="_IDGenTileContent2"  >
+        </TileContent>
+    </GenericTile>
+</mvc:View>
+ 

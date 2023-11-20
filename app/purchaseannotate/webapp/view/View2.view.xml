@@ -1,0 +1,119 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout" controllerName="purchaseannotate.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+        xmlns:core="sap.ui.core"
+    >
+            <l:FixFlex id="_IDGenFixFlex1" class="fixFlexHorizontal detail_page" vertical="false" >
+ 
+        <l:flexContent>
+            <Panel id="_IDGenPanel1" width="90%" height="auto" class="genInfo sapUiResponsiveMargin" accessibleRole="Region">
+                <ObjectHeader id="_IDGenObjectHeader1"
+                         title="General Information"
+                         icon="sap-icon://information">
+                </ObjectHeader>
+                 <FlexBox id="flex1" alignItems="Center" justifyContent="SpaceAround" class="genInfo">
+                 <VBox id="_IDGenVBox1" >
+                <Label id="label1" text="Customer/Supplier" labelFor="suggestionsMultiComboBox"></Label>
+                 <!-- <MultiInput id="singleInput" placeholder="Enter Supplier Id" valueHelpOnly="true"
+                    valueHelpRequest=".onSingleConditionVHRequested" /> -->
+                 	<Select
+						
+						forceSelection="false"
+						
+						items="{
+							path: '/PurchaseOrders'
+						}">
+					<core:Item key="{Supplier}" text="{Supplier}" />
+				</Select>
+                 <Label id="label5" text="Service Type" labelFor="suggestionsMultiComboBox"></Label>
+                 <ComboBox id="_IDGenComboBox5" value="Firm"
+                >
+                  <core:Item id="_IDGenItem5" key="1" text="A" />
+                  <core:Item id="_IDGenItem6" key="2" text="B" />
+                </ComboBox>
+                <Label id="label6" text="Language" labelFor="suggestionsMultiComboBox"></Label>
+                 <ComboBox id="_IDGenComboBox6" value="English"
+                >
+                  <core:Item id="_IDGenItem10" key="1" text="A" />
+                  <core:Item id="_IDGenItem9" key="2" text="B" />
+                </ComboBox>
+                <Label id="_IDGenLabel1" text="Start Date" labelFor="DP8"/>
+                <DatePicker
+                    id="DP8"
+                    placeholder="Enter Date"
+                    change="handleChange"
+                    class="sapUiSmallMarginBottom"
+                    showFooter="true"/>
+                 </VBox>
+ 
+                 <VBox id="_IDGenVBox2" >
+                 <Label id="label2" text="Contract Type" labelFor="suggestionsMultiComboBox"></Label>
+                 <ComboBox id="_IDGenComboBox2" value="Transportation"
+                >
+                  <core:Item id="_IDGenItem3" key="1" text="A" />
+                  <core:Item id="_IDGenItem4" key="2" text="B" />
+                </ComboBox>
+                  <Label id="label3" text="Service Level" labelFor="suggestionsMultiComboBox"></Label>
+                 <ComboBox id="_IDGenComboBox3" value="MI4"
+                >
+                  <core:Item id="_IDGenItem7" key="1" text="A" />
+                  <core:Item id="_IDGenItem8" key="2" text="B" />
+                </ComboBox>
+                 <Label id="label4" text="Currency" labelFor="suggestionsMultiComboBox"></Label>
+                 <ComboBox id="_IDGenComboBox4" value="INR"
+                >
+                  <core:Item id="_IDGenItem12" key="1" text="A" />
+                  <core:Item id="_IDGenItem11" key="2" text="B" />
+                </ComboBox>
+                    <Label id="_IDGenLabel2" text="End Date" labelFor="DP9"/>
+                <DatePicker
+                    id="DP9"
+                    placeholder="Enter Date"
+                    change="handleChange"
+                    class="sapUiSmallMarginBottom"
+                    showFooter="true"/>
+                 </VBox>
+                </FlexBox>
+ 
+                <VBox id="vbox"  class="address_box">
+                <ObjectHeader id="_IDGenObjectHeader2"
+                         title="Customer HPCL"
+                         icon="sap-icon://customer">
+                </ObjectHeader>
+                <ObjectStatus id="_IDGenObjectStatus1"
+                   text="Saket,New Delhi"
+                   class="info_box"
+                    icon="sap-icon://map" />
+                <ObjectStatus id="_IDGenObjectStatus2"
+                   text="+919876543210"
+                   class="info_box"
+                    icon="sap-icon://call" />
+                <ObjectStatus id="_IDGenObjectStatus3"
+                   text="contract@gmail.com"
+                   class="info_box"
+                    icon="sap-icon://email" />
+                </VBox>
+ 
+                 <FlexBox id="flex2" alignItems="Center" justifyContent="SpaceAround" class="bottom_text">
+                <VBox id="lower_part1" class="bottom_info">
+                 <Label id="label20" text="MATERIAL" labelFor="suggestionsMultiComboBox"></Label>
+                 <Input id="input1" placeholder="Enter Supplier Id" />
+                 <Label id="label21" text="MATERIAL DESCRIPTION" labelFor="suggestionsMultiComboBox"></Label>
+                 <Input id="input2" placeholder="Enter Supplier Id" />
+                 
+                </VBox>
+                <VBox id="lower_part2">
+                <Label id="label7" text="UOM" labelFor="suggestionsMultiComboBox"></Label>
+                 <ComboBox id="_IDGenComboBox7" value="KG"
+                >
+                  <core:Item id="_IDGenItem13" key="1" text="A" />
+                  <core:Item id="_IDGenItem14" key="2" text="B" />
+                </ComboBox>
+                <Label id="label22" text="DAILY CONTRACTUAL QUANTITY" labelFor="suggestionsMultiComboBox"></Label>
+                 <Input id="input3" placeholder="Enter Supplier Id" value="1000" />
+                </VBox>
+                </FlexBox>
+            </Panel>
+        </l:flexContent>
+    </l:FixFlex>
+</mvc:View>

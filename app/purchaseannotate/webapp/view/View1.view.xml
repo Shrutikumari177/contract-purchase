@@ -1,0 +1,14 @@
+<mvc:View xmlns:mdc="sap.ui.mdc" controllerName="purchaseannotate.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:tnt="sap.tnt" class="side-navigation-demo"
+    xmlns="sap.m">
+ 
+    <tnt:SideNavigation id="sideNavigation" selectedKey="subItem3" class="sidebar">
+        <tnt:NavigationList id="_IDGenNavigationList1" itemSelect="onNavigationItemSelected">
+            <tnt:NavigationListItem id="_IDGenNavigationListItem1" text="Header" icon="sap-icon://employee">
+            </tnt:NavigationListItem>
+            <tnt:NavigationListItem id="_IDGenNavigationListItem5" text="TSW" icon="sap-icon://building">
+            </tnt:NavigationListItem>
+        </tnt:NavigationList>
+    </tnt:SideNavigation>
+</mvc:View>
+ 
