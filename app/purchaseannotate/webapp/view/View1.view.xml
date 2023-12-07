@@ -6,7 +6,7 @@
         <tnt:NavigationList id="_IDGenNavigationList1" itemSelect="onNavigationItemSelected">
             <tnt:NavigationListItem id="_IDGenNavigationListItem1" text="Header" icon="sap-icon://employee">
             </tnt:NavigationListItem>
-            <tnt:NavigationListItem id="_IDGenNavigationListItem5" text="TSW Details" icon="sap-icon://building">
+            <tnt:NavigationListItem id="_IDGenNavigationListItem5" text="TSW Details"   icon="sap-icon://building" press="onPress" type="Active">
             </tnt:NavigationListItem>
         </tnt:NavigationList>
     </tnt:SideNavigation>

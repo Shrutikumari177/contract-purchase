@@ -17,6 +17,10 @@ sap.ui.define([
                 oRouter.navTo("RouteView2", {
                     invoicePath: window.encodeURIComponent(oItem.getBindingContext().getPath().substr(1))
                 });
+            },
+            onPress: function() {
+                const oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("RouteTSW");
             }
         });
     });

@@ -1,0 +1,6 @@
+<mvc:View xmlns:mdc="sap.ui.mdc" controllerName="purchaseannotate.controller.TSW"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:tnt="sap.tnt" class="side-navigation-demo"
+    xmlns="sap.m">
+    <Text text="hello"></Text>
+    </mvc:View>
+ 

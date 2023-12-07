@@ -125,6 +125,13 @@
           "target": [
             "TargetView4"
           ]
+        },
+        {
+          "name": "RouteTSW",
+          "pattern": "page4",
+          "target": [
+            "TargetTSW"
+          ]
         }
       ],
       "targets": {
@@ -158,6 +165,14 @@
           "clearControlAggregation": false,
           "viewId": "View4",
           "viewName": "View4",
+          "viewLevel": 1
+        },
+        "TargetTSW": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TSW",
+          "viewName": "TSW",
           "viewLevel": 1
         }
       }
